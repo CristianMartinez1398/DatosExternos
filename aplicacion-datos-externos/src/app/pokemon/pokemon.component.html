@@ -1,0 +1,19 @@
+<div *ngIf="pokemon">
+    <div class="card" style="width: 18rem;">
+        <div class="card-header text-center ">
+            <h5>{{pokemon.id}}</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <img [src]="pokemon.sprites.front_default" alt="" class="tamano">
+          </li>
+          <li class="list-group-item text-center">
+               <h5>{{pokemon.name}}</h5>
+          </li>
+          <li class="list-group-item text-center">
+            <h6>Altura: {{pokemon.height}}</h6>
+            <h6>Peso: {{pokemon.weight}}</h6>
+            </li>
+        </ul>
+      </div>
+</div>
